@@ -14,3 +14,43 @@ The audio files will be saved in the same directory as the script file. You can 
 # Dependencies
 
     ffmpeg
+
+# How to install ffmpeg
+
+# Windows
+There are several ways to install FFmpeg on Windows:
+
+Download a pre-built static binary from the FFmpeg website
+
+    (https://ffmpeg.org/download.html#build-windows).
+
+Extract the downloaded archive and add the bin folder to your system's PATH environment variable.
+Use a package manager such as Chocolatey (https://chocolatey.org/) to install FFmpeg. Open a command prompt and run the following command:
+
+    choco install ffmpeg
+
+This will install the latest version of FFmpeg and add it to your system's PATH.
+
+Use a third-party software installer such as the Zeranoe FFmpeg builds (https://ffmpeg.zeranoe.com/builds/). Download and run the installer, and follow the prompts to install FFmpeg.
+
+# Mac
+There are several ways to install FFmpeg on Mac:
+
+Use a package manager such as Homebrew (https://brew.sh/) to install FFmpeg. Open a terminal and run the following command:
+
+    brew install ffmpeg
+
+This will install the latest version of FFmpeg and add it to your system's PATH.
+Download a pre-built static binary from the FFmpeg website (https://ffmpeg.org/download.html#build-mac). Extract the downloaded archive and add the bin folder to your system's PATH environment variable.
+
+# Linux
+There are several ways to install FFmpeg on Linux:
+
+Use a package manager such as apt (Debian/Ubuntu), yum (CentOS/Red Hat), or dnf (Fedora) to install FFmpeg. For example, on Debian/Ubuntu, you can use the following commands:
+
+    sudo apt update
+    sudo apt install ffmpeg
+
+This will install the latest version of FFmpeg available through the package manager.
+
+Download the source code from the FFmpeg website (https://ffmpeg.org/download.html#source) and build FFmpeg from source. This can be a more involved process, but it allows you to customize your build and potentially get the latest version of FFmpeg.
