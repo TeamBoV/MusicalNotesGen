@@ -37,8 +37,8 @@ frequencies = [440, 466.16, 493.88, 523.25, 554.37, 587.33, 622.25, 659.25, 698.
 for i in range(len(notes)):
     create_wave_file(frequencies[i], 1.0, 0.1, f'{notes[i]}_original.wav')
 
-    # Use sox to adjust the gain of the .wav file
-    subprocess.run(['sox', f'{notes[i]}_original.wav', f'{notes[i]}.wav', 'gain', '-12'])
+    # Use ffmpeg to adjust the volume of the .wav file
+    subprocess.run(['ffmpeg', '-i', f'{notes[i]}_original.wav', '-af', 'volume=-12dB', f'{notes[i]}.wav'])
 
     # Delete the original .wav file
     os.remove(f'{notes[i]}_original.wav')
